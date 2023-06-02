@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Market</title>
+</head>
+<body>
+  <!-- for heading -->
+  <div class="container-fluid p-0">
+    <nav id="navbar_top" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Market A</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login/Register</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cathegories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Devices</a></li>
+                <li><a class="dropdown-item" href="#">Creatures</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Illegal</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <!-- for search bar -->
+      <div class="container-fluid p-2 bg-body-tertiary">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <!-- for detail -->
+  <div class="container mt-5 mb-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="images p-3">
+                            <div class="text-center p-4"> <img id="main-image" src="money.png" width="250" /> </div>
+                            <div class="thumbnail text-center"> <img onclick="change_image(this)" src="money2.jpg" width="70"> <img onclick="change_image(this)" src="money3.webp" width="70"> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="product p-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center"> <i class="fa fa-long-arrow-left"></i> <span class="ml-1">Illegale</span> </div> <i class="fa fa-shopping-cart text-muted"></i>
+                            </div>
+                            <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand">Seller Name</span>
+                                <h5 class="text-uppercase">Fake Money</h5>
+                                <div class="price d-flex flex-row align-items-center"> <span class="act-price">30000MMK</span>
+                                    
+                                </div>
+                            </div>
+                            <p class="about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates, doloribus quaerat blanditiis itaque non vitae fugiat aliquam, molestias commodi assumenda dolorem, porro architecto. Voluptatibus quod et quibusdam facilis nisi.</p>
+                            <div class="sizes mt-5">
+                                <h6 class="text-uppercase">Payment</h6> 
+                                <label class="radio"> <input type="radio" name="payment" value="Crypto" checked> <span>Crypto</span> </label> 
+                                <label class="radio"> <input type="radio" name="payment" value="Kpay"> <span>Kpay</span> </label> 
+                                <label class="radio"> <input type="radio" name="payment" value="WavePay"> <span>WavePay</span> </label> 
+                                <label class="radio"> <input type="radio" name="payment" value="AyaPay"> <span>AyaPay</span> </label> 
+                                <label class="radio"> <input type="radio" name="payment" value="CBPay"> <span>CBPay</span> </label>
+                            </div>
+                            <div class="cart mt-4 align-items-center"> <button class="btn btn-danger text-uppercase mr-2 px-4">Buy</button> <i class="fa fa-heart text-muted"></i> <i class="fa fa-share-alt text-muted"></i> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- for line -->
+ <div class="container-fluid line"></div>
+
+ <!-- for footer -->
+ <div class=" container-fluid p-0 text-center footer">
+   <a href="">Copyright by BBM</a>
+ </div>
+
+<link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js">
+<link rel="stylesheet" href="bootstrap-5.3.0-dist/js/bootstrap.min.js">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</body>
+</html>
